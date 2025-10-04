@@ -1,0 +1,27 @@
+{
+   "action": {
+      "default_icon": "label/icons/icon.png"
+   },
+   "background": {
+      "service_worker": "background.js"
+   },
+   "content_scripts": [ {
+      "css": [ "label/css/wprescrm.css", "content/assets/css/style.css", "content.css" ],
+      "js": [ "content/index.js" ],
+      "matches": [ "https://web.whatsapp.com/*" ]
+   } ],
+   "description": "WaCRM - CRM PRO: Convierte WhatsApp en tu herramienta de ventas. Envía mensajes masivos, gestiona leads, optimiza datos y aumenta las conversiones. ¡Consigue más ofertas!",
+   "icons": {
+      "128": "label/icons/icon.png"
+   },
+"key":"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA60cPQcqs+ubo0Cg9IFE4DZxU5y+UJog5vRuN2zUzSpo0K2D1pVQR7u1RO3gSf3S25d4+h+l+PVcjVZe3IxuK+2hv7mw5zmO4RoJyu6rIZ0ApKuOx8siGMgKdRKo3jmTdLVOIxoJiNHwDHgZVV9BJeHlQUpcgGRmHi4ybe93IN4EoCRU8N7EWiMHHy4pvCEM4rjeULyTl1JglqAoxlvZQ+vEuXgz/WhG9IMU/SZUZdu1FSg3AQ52gUtV916DxatrRPM0MhfxKqQnAiQ6TgINY43KvNuedekWeNsoLZzy16ASaNYVPg01nL0/Y7xftPlI9Xvye1rVo4UNcT1r+bIqqzQIDAQAB",
+   "manifest_version": 3,
+   "name": "WaCRM - CRM PRO: ¡Deja de perder leads y empieza a cerrar tratos en WhatsApp!",
+   "permissions": [ "unlimitedStorage", "storage", "alarms", "tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1.1.1",
+   "web_accessible_resources": [ {
+      "matches": [ "https://web.whatsapp.com/*" ],
+      "resources": [ "*.js", "*.css", "*.png", "*.mp3", ".ttf", "label/*.json", "label/*.png" ]
+   } ]
+}
